@@ -1,0 +1,91 @@
+/* Estilos para el menú lateral */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 190px; /* Ancho ajustado para los iconos */
+  height: 100%;
+  background-color: #212529;
+  color: white;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alinea los elementos al principio */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Agrega una sombra sutil */
+  transition: all 0.3s ease; /* Suaviza los cambios de ancho o animaciones */
+}
+
+.content {
+  margin-left: 200px; /* Asegúrate de que el contenido no quede oculto por el sidebar */
+}
+
+/* Lista de enlaces */
+.links {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+}
+
+/* Estilo de cada enlace */
+.links li {
+  padding: 12px 20px; /* Añadí padding para dar un poco más de espacio */
+  cursor: pointer;
+  text-align: left; /* Alineación a la izquierda */
+  width: 79%; /* Asegura que el enlace ocupe todo el espacio disponible */
+  display: flex;
+  align-items: center; /* Centra los iconos y texto verticalmente */
+  font-size: 16px; /* Tamaño de fuente */
+  position: relative; /* Necesario para la barra debajo del enlace activo */
+}
+
+/* Cambio de color al pasar el mouse */
+.links li:hover {
+  background-color: #343a40;
+  transition: background-color 0.3s ease; /* Transición suave */
+}
+
+/* Estilo para el enlace activo */
+.activeLink {
+  background-color: #80ed99;
+  color: black;
+  font-weight: bold; /* Hace que el enlace activo se destaque más */
+}
+
+/* Barra debajo del enlace activo */
+.activeLink::after {
+  content: ''; /* Necesario para generar el pseudo-elemento */
+  position: absolute;
+  bottom: 0; /* Coloca la barra en la parte inferior */
+  left: 50%; /* Centra la barra */
+  transform: translateX(-50%); /* Ajusta la barra para que esté centrada */
+  width: 60%; /* Ajusta el ancho de la línea verde */
+  height: 3px; /* Altura de la línea */
+  background-color: #80ed99; /* El mismo color verde */
+}
+
+/* Estilo para los iconos dentro de los enlaces */
+.icon {
+  margin-right: 15px; /* Espacio entre el icono y el texto */
+  font-size: 18px; /* Tamaño de los iconos ligeramente mayor */
+  transition: transform 0.3s ease; /* Transición suave para los iconos */
+}
+
+/* Efecto en los iconos al pasar el mouse */
+.links li:hover .icon {
+  transform: scale(1.2); /* Aumenta ligeramente el tamaño del icono */
+}
+
+/* Media Query para dispositivos más pequeños */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px; /* Reduce el ancho en pantallas pequeñas */
+  }
+
+  .links li {
+    font-size: 14px; /* Reduce el tamaño de la fuente en dispositivos pequeños */
+  }
+
+  .icon {
+    font-size: 16px; /* Ajusta el tamaño de los iconos */
+  }
+}
