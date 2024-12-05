@@ -338,3 +338,6 @@
 /home/ely/Público/apiSqlWeb/ApiSQLstorebyte/obj/Debug/net8.0/ref/ApiSQLstorebyte.dll
 /home/ely/Público/apiSqlWeb/ApiSQLstorebyte/bin/Debug/net8.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
 /home/ely/Público/apiSqlWeb/ApiSQLstorebyte/bin/Debug/net8.0/package.json
+/home/ely/apiSqlWeb/ApiSQLstorebyte/bin/Debug/net8.0/package.json
+/home/ely/apiSqlWeb/ApiSQLstorebyte/bin/Debug/net8.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/home/ely/apiSqlWeb/ApiSQLstorebyte/obj/Debug/net8.0/ApiSQLstorebyte.sourcelink.json

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ApiSQLstorebyte")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fd8163efb68d82131ab88cc4cede050b806db5c0")]
 [assembly: System.Reflection.AssemblyProductAttribute("ApiSQLstorebyte")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ApiSQLstorebyte")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
